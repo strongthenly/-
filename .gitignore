@@ -1,0 +1,36 @@
+# ===== 大文件 / 资料库 / 机器生成物【不提交，避免仓库膨胀】=====
+# 历年获奖论文、赛题解析等资料库（放本地/网盘）
+②历年获奖作品/
+④赛题解析/
+上传包/
+*.pdf
+*.docx
+*.doc
+*.pptx
+
+# ===== 赛方原始数据（大、且可能涉密），三人都用本地同一份 =====
+data/**/*
+!data/**/.gitkeep
+
+# ===== Python 环境 =====
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ===== 生成的中间产物 / 大结果（可重新跑出，不入库）=====
+figures/*.png
+figures/*.jpg
+results/*.json
+results/*.log
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
