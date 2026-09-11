@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "example_only": true,
+  "claims": [{
+    "claim_id": "q1-main",
+    "question": "Q1",
+    "metric": "MAPE",
+    "unit": "percent",
+    "baseline": {"name": null, "value": null},
+    "method": {"name": null, "value": null},
+    "comparison_scope": null,
+    "source_result": null,
+    "verification": "not_run",
+    "limitations": []
+  }]
+}
