@@ -1,4 +1,4 @@
-# GPT-6 数学建模工作流 · v1.0
+# GPT-6 数学建模工作流 · v1.1
 
 从2025A核内调度与2024C磁芯损耗两轮完整真题演练、论文修订和压力验证中提炼。目标是让另一台电脑、另一位使用者也能执行同样的证据与交付标准。技能不保证相同分数、误差或奖项；模型版本、原始数据、验证设计和人工实验条件都会影响结果。
 
@@ -51,6 +51,7 @@ Windows把路径替换为例如 `D:/modeling/practice`，有空格须加引号�
 |[预测与不确定性](.agents/skills/gpt6-math-modeling/references/prediction.md)|泄漏、外推、响应敏感性、共形与选择|
 |[优化与证明](.agents/skills/gpt6-math-modeling/references/optimization.md)|可行性、强基线、下界、精确验证|
 |[论文与图表](.agents/skills/gpt6-math-modeling/references/paper.md)|摘要、图型、原生公式、逐页复核|
+|[模板迁移](.agents/skills/gpt6-math-modeling/references/template-fidelity.md)|模板规格、章节映射、可编辑公式、目录与跨格式完整性|
 |[运行与交接](.agents/skills/gpt6-math-modeling/references/execution.md)|证据账本、冻结、预算和交接|
 
 维护包本身时执行 `python -m unittest discover -s tests -v`。这验证工具行为和包完整性，不等同于盲题生成质量验证。本次发布没有在全新Linux/macOS环境或独立用户账号上完整跑一篇论文。

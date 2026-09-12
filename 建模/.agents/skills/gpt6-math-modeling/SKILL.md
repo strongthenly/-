@@ -27,6 +27,7 @@ description: 完成数学建模题的分析、求解、验证与论文交付，�
 - 有预测、分类、因素解释或不确定性：读[预测验证](references/prediction.md)。
 - 有优化、调度或“逼近最优”：读[优化证据](references/optimization.md)。
 - 需要论文/图表/PDF：读[论文与图表](references/paper.md)。
+- 用户提供Word或LaTeX模板：再读[模板迁移](references/template-fidelity.md)，先核对源模板和内容槽，再决定转换路线。
 - 长任务、有限额度、复现和交接：读[运行与交接](references/execution.md)。
 
 机理模型额外检查量纲、守恒、极限条件和参数可辨识性；仿真不冒充真实实验。评价模型检查指标方向、重复信息、权重扰动与排名稳定性，无标签时不造“准确率”。
