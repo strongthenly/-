@@ -27,6 +27,7 @@ description: 完成数学建模题的分析、求解、验证与论文交付，�
 - 有预测、分类、因素解释或不确定性：读[预测验证](references/prediction.md)。
 - 有优化、调度或“逼近最优”：读[优化证据](references/optimization.md)。
 - 需要论文/图表/PDF：读[论文与图表](references/paper.md)。
+- 图表重构、三维尝试、六角形路线或现实约束讨论：读[图表与工程边界](references/visual-engineering.md)。
 - 用户提供Word或LaTeX模板：再读[模板迁移](references/template-fidelity.md)，先核对源模板和内容槽，再决定转换路线。
 - 长任务、有限额度、复现和交接：读[运行与交接](references/execution.md)。
 

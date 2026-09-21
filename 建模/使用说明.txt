@@ -1,0 +1,56 @@
+数学建模工作流 使用说明（v1.2，2026-09-21）
+
+一、这是什么
+这是一套可迁移的建模 skill、调用规范和辅助工具，不包含历年赛题数据、论文成果、Python环境或账户密钥。
+适合新题全链路、已有论文修订、图表重构与结果核查。不能保证特定奖项或相同模型误差。
+
+二、直接在桌面使用
+1. 在 Codex 中打开本“建模”文件夹作为工作目录。
+2. 自行选择账户中可用的 GPT-6 模型；skill 不会开通或切换模型。
+3. 提供原题、附件、官方提交格式，以及独立项目输出目录。
+4. 输入以下提示词：
+
+使用 $gpt6-math-modeling。先读取 .agents/skills/gpt6-math-modeling/SKILL.md。
+原题与附件位于：<填路径>。输出目录：<填独立项目路径>。
+完成题意分析、真实求解、强基线验证、工程边界讨论和可编辑论文及PDF。
+复用现有环境；图表按论点选型，数字来自冻结结果。
+如需三维图，说明三个坐标或类别层的含义，保留必要投影；总体路线可采用六角形排版。
+按我提供的模板排版，渲染检查全篇，保存结果来源与HANDOFF.md。
+
+若没有识别到技能，直接要求读取上述相对路径。请保留隐藏的 .agents 文件夹及全部 references，不能只拷贝 SKILL.md。
+
+三、环境检查与新项目（终端在本文件夹内运行）
+python tools/workflow.py doctor
+python tools/workflow.py init "D:/modeling/my-project"
+python tools/workflow.py install "D:/modeling/my-project/.agents/skills"
+
+doctor只检查，不自动安装。init目标须不存在；install遇同名技能不会静默覆盖。
+Python命令按自己的环境替换。需要哪些库见“环境与复现.md”；不必预装所有算法包。
+Word/PDF转换与字体能力须在本机核验；没有渲染条件不能称排版已验收。
+
+四、续做与改图
+续做：提供HANDOFF.md、当前文稿、代码、结果文件和本次范围。
+改图：明确哪些图、希望回答的问题和风格参考；不为三维或美观补造数据。
+只改排版时冻结实验数字，比较表格与公式，更新图号、引用、目录及导出PDF。
+新增验证后同步结论和局限，不留下旧版本自相矛盾的表述。
+
+五、私人仓库获取与更新
+仓库：https://github.com/strongthenly/-.git
+其他人须先取得仓库访问权，并以自己的GitHub账户完成Git认证。不要分享密码或令牌。
+首次获取：
+git clone https://github.com/strongthenly/-.git modeling-workflows
+cd modeling-workflows/建模
+
+已有完整克隆，在克隆目录中运行：
+git pull --ff-only
+
+桌面的“建模”是独立导出副本，没有.git，不能在里面直接git pull。
+更新时先在完整克隆中拉取，再将其中“建模”复制到新的目录；已有个人修改先备份和比较。
+本次桌面交付的来源与提交号见“同步信息.txt”（由交付步骤生成）。
+
+六、阅读顺序
+README.md → 调用规范.md → 环境与复现.md → 演练经验与验收.md。
+图表与工程讨论详见：
+.agents/skills/gpt6-math-modeling/references/visual-engineering.md
+
+工作流是助手，不是固定模型、固定页数或固定图型的约束。官方题面和明确用户要求优先；论文、数据公开发布须另有授权。
